@@ -1,0 +1,45 @@
+{
+  "name": "@benoit-lefebvre-caelus/library",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Library of Next.js/React components and tools.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "generate": "node generate-index.js",
+    "build": "npm run generate && rollup -c",
+    "publish:github": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:benoit-lefebvre-caelus/npm-library-example.git"
+  },
+  "keywords": [],
+  "author": "Benoit LEFEBVRE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benoit-lefebvre-caelus/npm-library-example/issues"
+  },
+  "homepage": "https://github.com/benoit-lefebvre-caelus/npm-library-example/blob/main/README.md",
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "rollup-plugin-copy": "^3.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.49.0"
+  }
+}
