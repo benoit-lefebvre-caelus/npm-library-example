@@ -1,3 +1,10 @@
 {
-  "presets": ["@babel/preset-react"]
+  "presets": ["next/babel"],
+  "env": {
+    "coverage": {
+      "plugins": [
+        ["istanbul", { "useInlineSourceMaps": false }, "istanbul-coverage"]
+      ]
+    }
+  }
 }

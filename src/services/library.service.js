@@ -35,9 +35,9 @@ export const library_get = async (
           author: book.author
         }))
       })
-        .catch((error) => {
-          throw new Error(`Error fetching library: ${error.message}`);
-        });
+    })
+    .catch((error) => {
+      throw new Error(`Error fetching library: ${error.message}`);
     });
 }
 

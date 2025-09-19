@@ -1,3 +1,9 @@
 node_modules
 dist
-#.npmrc // You MUST comment this line to publish to npm
+.npmrc
+.scannerwork
+coverage
+.vscode
+.nyc_output
+.next
+cypress/screenshots
